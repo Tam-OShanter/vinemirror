@@ -1,0 +1,11 @@
+%h1 Top Rated Vines
+
+- @vines.each do |vine|
+  %ul
+    %li= link_to vine.title, vine
+    %li= vine.score
+
+
+%br
+
+= link_to 'New Vine', new_vine_path
